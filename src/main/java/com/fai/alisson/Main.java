@@ -12,8 +12,8 @@ public class Main {
 
 	}
 	
-	//private Map<String, String> mapa = new HashMap<String, String>();
-	private Map<String, String> mapa = null;
+	private Map<String, String> mapa = new HashMap<String, String>();
+	//private Map<String, String> mapa = null;
 	
 	private void start() {
 		adicionarItensNoMapa();
@@ -42,7 +42,7 @@ public class Main {
 		if(valorDoItemDoMapa ==null || valorDoItemDoMapa.isEmpty()) {
 			System.out.println("Esta chave não está presente nesse mapa " + chave);
 		}else {
-			//System.out.println("O valor dessa chave é: " + mapa.get(chave));
+			System.out.println("O valor dessa chave é: " + mapa.get(chave));
 		}
 			
 		
@@ -51,7 +51,7 @@ public class Main {
 	private void iterarMapa() {
 		System.out.println("---------------");
 		for(String chave: mapa.keySet()) {
-			//System.out.println("Chave: " + chave + " | valor: " + mapa.get(chave));
+			System.out.println("Chave: " + chave + " | valor: " + mapa.get(chave));
 		}
 	}
 }
